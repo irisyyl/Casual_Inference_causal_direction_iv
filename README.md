@@ -1,8 +1,8 @@
-# [Your Project Title Here]
+# Casual Inference on Kaggle dataset: causal_direction_iv
 
 ## Repository Link
 
-[https://github.com/your_username/your_project_name]
+[https://github.com/irisyyl/Casual_Inference_causal_direction_iv]
 
 ## Description
 
