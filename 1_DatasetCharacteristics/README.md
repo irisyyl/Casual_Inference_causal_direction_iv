@@ -5,12 +5,13 @@
 ## Dataset Information
 
 ### Dataset Source
-- **Dataset Link:** [Provide a direct link to your dataset. If the dataset is private, explain the reason and provide contact information for the dataset owner]
-- **Dataset Owner/Contact:** [If applicable, provide contact information for private datasets]
+- **Dataset Link:** https://www.kaggle.com/datasets/cloverchen/causalpitfalls-benchmark-causal-data-neurips-2025
+- **Dataset Owner/Contact:** CausalPitfalls: Benchmark Causal Data NeurIPS 2025
+CausalPitfalls Benchmark: Structured Synthetic Datasets for Evaluating LLM Causa
 
 ### Dataset Characteristics
 - **Number of Observations:** [Total number of samples/records in your dataset. For time series data, also specify the temporal resolution (e.g., daily, hourly, etc.)]
-- **Number of Features:** [Total number of features in your dataset]
+- **Number of Features:** 5 datasets in total, each dataset has 4 features. Each dataset contains ≥500 samples generated from a well‐specified structural causal model (SCM) so that ground‐truth effects are known.
 
 ### Target Variable/Label
 - **Label Name:** [Name of the target variable/column]
@@ -26,6 +27,12 @@
 - **Feature 1 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
 - **Feature 2 (feature_name):** [Description of what this feature represents, data type, and any relevant details]
 - **Feature Group (group_name):** [Description of a group of related features]
+
+## Approaches to implement 
+
+- **Method 1:** Two-Stage Least Squares (2SLS)
+- **Method 2:** Direction Test Based on IV Strength
+- **Method 3:** Control Function Approach
 
 ## Exploratory Data Analysis
 
