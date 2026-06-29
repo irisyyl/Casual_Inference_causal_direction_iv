@@ -1,16 +1,16 @@
-# Casual Inference on Kaggle dataset: causal_direction_iv
+# From Correlation to Causation: Instrumental Variables in Practice
 
 ## Repository Link
 
-[https://github.com/irisyyl/Casual_Inference_causal_direction_iv]
+https://github.com/irisyyl/Casual_Inference_causal_direction_iv
 
 ## Description
 
-[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
+This repo explores when OLS is reliable, when IV is needed, and how robust the estimated effects are to hidden confounding across clinical, e‑commerce, evironmental, and marketing and benchmark datasets. 
 
 ### Task Type
 
-[Image Classification / Chatbot / Regression / Clustering / Other]
+Identify causal direction using instrumental variables (IV) when there is unmeasured confounding.
 
 ### Results Summary
 
