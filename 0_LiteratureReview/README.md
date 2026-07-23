@@ -36,6 +36,15 @@ Approaches or solutions that have been tried before on similar projects.
   - **Outcomes**:
   - **Relation to the Project**: Causal models. 
 
+- **Source 5**: Instrumental variables regression with weak instruments by Douglas Staiger and James H. Stock (May 1997)
+
+  - **[Link](https://stock.scholars.harvard.edu/sites/g/files/omnuum5911/files/stock/files/instrumental_variables_regression_with_weak_instruments.pdf)**
+  - **Objective**: 
+  - **Methods**:
+  - **Outcomes**: The "Staiger-Stock" rule of thumb states that in an instrumental variables regression with a single endogenous regressor, instruments are considered weak if the first-stage F-statistic is less than 10.
+  - **Relation to the Project**: Evaluation metric of IV strength. 
+
+
 
 
 
