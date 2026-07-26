@@ -40,17 +40,17 @@
 
 - **Actual Performance Results:**
 
-| Chain | β (OLS) | p-value | R² | Adj-R² | F-stat | MSE | RMSE |
-|---|---|---|---|---|---|---|---|
-| causal_direction_iv (X_1→X_2) | 0.4921 | <0.001 | 0.0802 | 0.0793 | 87.12 | 2.143 | 1.464 |
-| clinical_trial (dosage→health) | 0.9967 | <0.001 | 0.9841 | 0.9841 | 62,358 | 0.812 | 0.901 |
-| clinical_trial (drug_conc→health) | 0.6645 | <0.001 | 0.9923 | 0.9922 | 127,580 | 0.401 | 0.633 |
-| ecommerce (visits→purchases) | 0.5201 | <0.001 | 0.0029 | 0.0019 | 2.92 | 32,847 | 181.2 |
-| ecommerce (income→purchases) | 0.0100 | <0.001 | 0.9976 | 0.9976 | 416,767 | 80.1 | 8.95 |
-| environment (soil→crop_yield) | 0.9293 | <0.001 | 0.2177 | 0.2169 | 278.3 | 2,418 | 49.17 |
-| environment (fertilizer→crop_yield) | 1.2420 | <0.001 | 0.8447 | 0.8445 | 5,430 | 480.8 | 21.93 |
-| marketing (brand_awareness→sales) | 0.5099 | <0.001 | 0.3801 | 0.3795 | 613.0 | 374.6 | 19.35 |
-| marketing (promo_spend→sales) | 1.2853 | <0.001 | 0.6040 | 0.6036 | 1,522 | 238.6 | 15.45 |
+  | Chain | β (OLS) | p-value | R² | Adj-R² | F-stat | MSE | RMSE |
+  |---|---|---|---|---|---|---|---|
+  | causal_direction_iv (X_1→X_2) | 0.4921 | <0.001 | 0.0802 | 0.0793 | 87.12 | 2.143 | 1.464 |
+  | clinical_trial (dosage→health) | 0.9967 | <0.001 | 0.9841 | 0.9841 | 62,358 | 0.812 | 0.901 |
+  | clinical_trial (drug_conc→health) | 0.6645 | <0.001 | 0.9923 | 0.9922 | 127,580 | 0.401 | 0.633 |
+  | ecommerce (visits→purchases) | 0.5201 | <0.001 | 0.0029 | 0.0019 | 2.92 | 32,847 | 181.2 |
+  | ecommerce (income→purchases) | 0.0100 | <0.001 | 0.9976 | 0.9976 | 416,767 | 80.1 | 8.95 |
+  | environment (soil→crop_yield) | 0.9293 | <0.001 | 0.2177 | 0.2169 | 278.3 | 2,418 | 49.17 |
+  | environment (fertilizer→crop_yield) | 1.2420 | <0.001 | 0.8447 | 0.8445 | 5,430 | 480.8 | 21.93 |
+  | marketing (brand_awareness→sales) | 0.5099 | <0.001 | 0.3801 | 0.3795 | 613.0 | 374.6 | 19.35 |
+  | marketing (promo_spend→sales) | 1.2853 | <0.001 | 0.6040 | 0.6036 | 1,522 | 238.6 | 15.45 |
 
 - **Performance Interpretation:**
 
@@ -76,10 +76,10 @@
     - OLS β vs 2SLS β - bias magnitude and direction 
    **Endogeneity bias:** — the gap between the OLS coefficient and the 2SLS coefficient, which directly quantifies how much the naive estimate is distorted by unmeasured confounding:
 
-| Chain | OLS β | 2SLS β | Bias (OLS−2SLS) | OLS reliable? |
-|---|---|---|---|---|
-| causal_direction_iv | 0.492 | 0.932 | −0.440 | No — endogenous |
-| environment (soil) | 0.929 | 0.948 | −0.019 | No — endogenous |
-| ecommerce (income) | 0.010 | N/A | ~0 | Yes — Oster robust |
-| environment (fert) | 1.242 | N/A | ~0 | Yes — Oster robust |
-| marketing (promo) | 1.285 | N/A | ~0 | Yes — Oster robust |
+  | Chain | OLS β | 2SLS β | Bias (OLS−2SLS) | OLS reliable? |
+  |---|---|---|---|---|
+  | causal_direction_iv | 0.492 | 0.932 | −0.440 | No — endogenous |
+  | environment (soil) | 0.929 | 0.948 | −0.019 | No — endogenous |
+  | ecommerce (income) | 0.010 | N/A | ~0 | Yes — Oster robust |
+  | environment (fert) | 1.242 | N/A | ~0 | Yes — Oster robust |
+  | marketing (promo) | 1.285 | N/A | ~0 | Yes — Oster robust |

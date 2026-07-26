@@ -27,16 +27,16 @@ variables (IV) under unmeasured confounding.
   Oster (2019) δ (OLS-chain robustness)
 - **Final Performance:**
 
-| Dataset | Estimator | Causal Effect (β) | First-stage F | IV Valid? |
-|---|---|---|---|---|
-| causal_direction_iv | 2SLS | 0.9318 (t=14.19) | 168.7 | Yes |
-| clinical_trial | OLS fallback | ~1.0 (confounded) | 0.86 | No |
-| ecommerce (income→purchases) | OLS | 0.0100 (t=645.6) | N/A | N/A |
-| ecommerce (visits→purchases) | 2SLS | Not significant (t=1.72) | 124,406 | Yes (null) |
-| environment (soil→crop_yield) | 2SLS | 0.9475 (t=16.67) | 859,535 | Yes |
-| environment (fertilizer→crop_yield) | OLS | 1.2420 (t=73.69) | N/A | N/A |
-| marketing (promo→sales) | OLS | 1.2853 (t=39.02) | N/A | N/A |
-| marketing (ad/brand→sales) | Degenerate IV | ~0.53 (treat w/ caution) | 591,076* | No* |
+    | Dataset | Estimator | Causal Effect (β) | First-stage F | IV Valid? |
+    |---|---|---|---|---|
+    | causal_direction_iv | 2SLS | 0.9318 (t=14.19) | 168.7 | Yes |
+    | clinical_trial | OLS fallback | ~1.0 (confounded) | 0.86 | No |
+    | ecommerce (income→purchases) | OLS | 0.0100 (t=645.6) | N/A | N/A |
+    | ecommerce (visits→purchases) | 2SLS | Not significant (t=1.72) | 124,406 | Yes (null) |
+    | environment (soil→crop_yield) | 2SLS | 0.9475 (t=16.67) | 859,535 | Yes |
+    | environment (fertilizer→crop_yield) | OLS | 1.2420 (t=73.69) | N/A | N/A |
+    | marketing (promo→sales) | OLS | 1.2853 (t=39.02) | N/A | N/A |
+    | marketing (ad/brand→sales) | Degenerate IV | ~0.53 (treat w/ caution) | 591,076* | No* |
 
 
 *High F due to r=0.999 between instrument and treatment — degenerate IV, not genuine strength.
@@ -52,14 +52,14 @@ variables (IV) under unmeasured confounding.
   unbiased causal estimates when IV assumptions hold.
 
 
-| Dataset | OLS β | 2SLS β | Bias (OLS−2SLS) | OLS Reliable? |
-|---|---|---|---|---|
-| causal_direction_iv | Higher than 0.93 | 0.9318 | Upward bias | No |
-| environment (soil) | Higher than 0.95 | 0.9475 | Upward bias | No |
-| ecommerce (income) | 0.0100 | N/A | Minimal | Yes |
-| environment (fertilizer) | 1.2420 | N/A | Minimal | Yes |
-| marketing (promo) | 1.2853 | N/A | Minimal | Yes |
-| clinical_trial | ~1.0 | Unreliable | N/A | Unknown |
+    | Dataset | OLS β | 2SLS β | Bias (OLS−2SLS) | OLS Reliable? |
+    |---|---|---|---|---|
+    | causal_direction_iv | Higher than 0.93 | 0.9318 | Upward bias | No |
+    | environment (soil) | Higher than 0.95 | 0.9475 | Upward bias | No |
+    | ecommerce (income) | 0.0100 | N/A | Minimal | Yes |
+    | environment (fertilizer) | 1.2420 | N/A | Minimal | Yes |
+    | marketing (promo) | 1.2853 | N/A | Minimal | Yes |
+    | clinical_trial | ~1.0 | Unreliable | N/A | Unknown |
 
 
 - **Improvement Over Baseline:** In datasets with valid IVs, 2SLS removes
